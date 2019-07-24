@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
-  max-width: 100vw;
-  height: 80vh;
+  width: 80vw;
+  height: 89vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -12,7 +12,6 @@ const Container = styled.div`
 const TextContainer = styled.div`
   height: 40vh;
   width: 500px;
-  margin-left: 50px;
 `
 
 const Heading = styled.h1`
@@ -20,7 +19,7 @@ const Heading = styled.h1`
 `
 
 const Description = styled.div`
-  font-size: 25px;
+  font-size: 22px;
   color: #343d32;
 `
 
@@ -30,6 +29,8 @@ const Graphic = styled.div`
   background: green;
 `
 
+const Button = styled.div``
+
 export default function Landing() {
   return (
     <Container>
@@ -37,7 +38,10 @@ export default function Landing() {
         <TextContainer>
           <Heading>Delhi Public School R.K. Puram</Heading>
           <Description>
-            The number one day-cum-boarding school (2018-2019) in India.
+            Ours is a co-ed day-cum-boarding school, with approximately 9,500
+            students on its rolls. These children, in the junior and senior
+            branches, study in the three different campuses at East of Kailash,
+            Vasant Vihar and R.K. Puram.
           </Description>
         </TextContainer>
       </div>

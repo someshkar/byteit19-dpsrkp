@@ -8,7 +8,16 @@ export default function Layout({ children }) {
   return (
     <div>
       <Navbar />
-      {children}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          maxWidth: "100vw",
+        }}
+      >
+        {children}
+      </div>
     </div>
   )
 }
