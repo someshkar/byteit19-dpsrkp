@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import Ticker from "./Ticker"
+
 import logo from "../../images/logo.png"
 
 const Container = styled.div`
@@ -9,22 +11,23 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: url("/images/bg.png");
+  background: url("/images/bg.jpg.bak");
   background-repeat: no-repeat;
-  background-size: 100vw 80vh;
+  background-size: 100vw 89vh;
   color: #ffffff;
 `
 
 const TextContainer = styled.div`
-  height: 35vh;
+  height: 26vh;
   width: 700px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 50px;
+  transform: translateY(-90px);
 `
 
 const TextLogo = styled.img`
   filter: brightness(0) invert(1);
-  height: 100px;
+  height: 140px;
 `
 
 const Heading = styled.div`
@@ -34,7 +37,8 @@ const Heading = styled.div`
 `
 
 const Description = styled.div`
-  font-size: 22px;
+  margin-top: 25px;
+  font-size: 30px;
 `
 
 const Graphic = styled.div`
@@ -59,12 +63,11 @@ export default function Landing() {
             <Heading>Delhi Public School R.K. Puram</Heading>
           </div>
           <Description>
-            Ours is a co-ed day-cum-boarding school, with approximately 9500
-            students on its rolls. These children, in the junior and senior
-            branches, study in the three different campuses at East of Kailash,
-            Vasant Vihar and R.K. Puram.
+            India’s number one day-cum-boarding school (2018-19) with
+            approximately 9500 students enrolled.
           </Description>
         </TextContainer>
+        <Ticker />
       </div>
       <div>
         <Graphic />

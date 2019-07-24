@@ -2,11 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 import { updates } from "../../util/firebase"
+import tempUpdates from "../../data/updates.json"
 
 const BiggerContainer = styled.div`
   width: 80vw;
   display: flex;
   justify-content: space-around;
+  margin-top: 150px;
   margin-bottom: 100px;
 `
 
@@ -73,7 +75,7 @@ export default function Updates() {
   return (
     <BiggerContainer>
       <Container>
-        {updatesArr.map(update => (
+        {tempUpdates.map(update => (
           <Update>
             <Title>{update.title}</Title>
             <Description>{update.content}</Description>
