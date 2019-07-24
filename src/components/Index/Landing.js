@@ -29,8 +29,8 @@ const Graphic = styled.div`
   background: green;
 `
 
-const Button = styled.div``
-
+// Sun, I need you to push all your changes so that I can merge the firebase branch
+// Working on live share makes more sence b/c no more merge conflicts
 export default function Landing() {
   return (
     <Container>
