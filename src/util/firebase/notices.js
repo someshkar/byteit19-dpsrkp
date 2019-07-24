@@ -1,22 +1,28 @@
 import firebase from "firebase"
 
-export function pushNotice(title, content, timestamp) {
+function pushNotice(title, content, timestamp) {
   return firebase
     .database()
     .ref("notices")
     .push({ title, content, timestamp })
 }
 
-export function onNoticeAdded(callback) {
+function onNoticeAdded(callback) {
   firebase
     .database()
     .ref("notices")
     .on("child_added", s => callback(s.val(), s))
 }
 
-export function getAllNotices(callback) {
+function getAllNotices(callback) {
   firebase
     .database()
     .ref("notices")
     .on("value", s => callback(s.val(), s))
+}
+
+export default {
+  pushNotice,
+  onNoticeAdded,
+  getAllNotices,
 }
