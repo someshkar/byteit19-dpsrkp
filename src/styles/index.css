@@ -3,11 +3,14 @@
   src: url("/fonts/ProductSans-Regular.ttf") format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Product Sans";
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 a {

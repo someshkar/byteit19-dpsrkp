@@ -24,8 +24,8 @@ const links = [
     to: "/admission",
   },
   {
-    name: "Payment",
-    to: "/payment",
+    name: "Fees",
+    to: "/fees",
   },
 ]
 
@@ -47,7 +47,7 @@ const Container = styled.div`
 const Item = styled.div`
   margin-left: 70px;
   margin-right: 70px;
-  font-size: 20px;
+  font-size: 25px;
   &:hover {
     color: #156501;
     transition: all 0.3s ease;
