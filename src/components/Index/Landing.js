@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: url("/images/bg.jpg");
+  background: url("/images/bg.png");
   background-repeat: no-repeat;
   background-size: 100vw 80vh;
   color: #ffffff;
@@ -43,8 +43,6 @@ const Graphic = styled.div`
   /* background: green; */
 `
 
-// Sun, I need you to push all your changes so that I can merge the firebase branch
-// Working on live share makes more sence b/c no more merge conflicts
 export default function Landing() {
   return (
     <Container>

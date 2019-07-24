@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import updates from "../../data/updates.json"
+import { updates } from "../../util/firebase"
 
 const BiggerContainer = styled.div`
   width: 80vw;
@@ -60,13 +60,23 @@ const Subheading = styled.div`
 `
 
 export default function Updates() {
+  const [updatesArr, setUpdates] = React.useState([])
+
+  React.useEffect(() => {
+    updates.onUpdateAdded(newUpdate =>
+      setUpdates(
+        updatesArr.concat(newUpdate).sort((a, b) => a.timestamp > b.timestamp)
+      )
+    )
+  }, [])
+
   return (
     <BiggerContainer>
       <Container>
-        {updates.map(update => (
+        {updatesArr.map(update => (
           <Update>
             <Title>{update.title}</Title>
-            <Description>{update.description}</Description>
+            <Description>{update.content}</Description>
           </Update>
         ))}
       </Container>
