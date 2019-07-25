@@ -3,6 +3,21 @@
   src: url("/fonts/ProductSans-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("/fonts/ProductSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Product Sans Light";
+  src: url("/fonts/ProductSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Product Sans Medium";
+  src: url("/fonts/ProductSans-Medium.ttf") format("truetype");
+}
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 html,

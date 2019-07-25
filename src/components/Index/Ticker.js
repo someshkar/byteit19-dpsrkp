@@ -10,6 +10,7 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
 }
 
 const Container = styled.div`
@@ -41,7 +42,7 @@ const Grey = styled.div`
 `
 
 const ActualTicker = styled(Slider)`
-  top: 90px;
+  top: 80px;
   left: 500px;
   width: 40vw;
   color: #000000;
@@ -52,11 +53,14 @@ const Update = styled.div``
 
 const UpdateHeading = styled.div`
   font-size: 30px;
+  margin-bottom: 5px;
+  color: #5f5c5c;
 `
 
 const UpdateContent = styled.div`
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
+  color: #5f5c5c;
 `
 
 export default function Ticker() {

@@ -63,7 +63,7 @@ export default function Landing() {
             <Heading>Delhi Public School R.K. Puram</Heading>
           </div>
           <Description>
-            India’s number one day-cum-boarding school (2018-19) with
+            India’s number one day-cum-boarding school ('18-'19) with
             approximately 9500 students enrolled.
           </Description>
         </TextContainer>
